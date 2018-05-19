@@ -109,7 +109,8 @@ header {
     margin-top: 30px;
     padding-bottom: 15px;
     color: #777777; 
-    border-top: 3px solid #cccccc
+    border-top: 3px solid #cccccc;
+    overflow: auto;
 }
 
 
@@ -122,6 +123,7 @@ footer {
     border-top: 5px solid #4aaaa5;
     background-color: #666666;
     color: #ffffff;
+    clear: both;
 }
 
 
@@ -131,6 +133,10 @@ footer {
     padding-bottom:10px;
 }
 
+
+
+/* Portfolio Content */
+
 .portlabel {
     height: 35px;
     background-color: #4aaaa5;
@@ -138,16 +144,27 @@ footer {
     position:relative;
     bottom: 45px;
     color: #ffffff;
-    width: 200px;
+    width: 180px;
     padding-top: 2px;
     font-weight: bold;
 }
 
+.portleft {
+    float: left;
+}
 
+.portright {
+float: left;
+margin-left: 50px;
+}
 
+.row2 {
+    clear: both;
+}
 
 
 /* Images*/
+
 
 
 img {
@@ -159,4 +176,11 @@ img {
     float:left;
     padding-right: 20px;
     padding-bottom: 20px;
+}
+
+/* Pseudo-classes */
+
+a:hover {
+    color: #4aaaa5;
+    font-weight: bold;
 }
